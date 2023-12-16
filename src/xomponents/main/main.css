@@ -1,0 +1,75 @@
+main{
+    background-color: rgb(246,246,246);
+}
+main .bgImage{
+    width: 95%;
+    height: 100vh;
+    background-image: url('./women.avif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+main .heroContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 2rem 0;
+    color: white;
+    background-color: rgb(153,31,72);
+    margin-bottom: 2rem;
+}
+main .heroContent h1{
+    font-weight: 500;
+}
+main .heroContent p{
+    width: 50%;
+    text-align: center;
+    font-weight: 600;
+}
+main .btns button{
+    background: transparent;
+    outline: none;
+    color: white;
+    font-weight: 600;
+    padding: 0.7rem 2rem;
+    border: 2px solid white;
+    cursor: pointer;
+    margin-left: 0.7rem;
+}
+main .btns button:hover{
+    color: rgb(153,31,72);
+    background-color: white;
+}
+main .contents{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    color: grey;
+}
+main .contents p:first-child{
+    color: rgb(153,31,72);
+}
+@media screen and (max-width: 768px) {
+    main .bgImage{
+     background-image: url('./responsiveBG.jpg');      
+    }
+    main .heroContent h1{
+        font-size: 28px;
+    }
+    main .btns button{
+        width: 80%;
+        margin: 0.5rem 0;
+        margin-left: 2.5rem;
+    }
+    main .heroContent p{
+        width: 90%;
+    }
+
+}
